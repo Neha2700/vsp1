@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Employeer Login-Startup Page</title>
+        <link rel='stylesheet' type='text/css' media='screen'>
+    <style type="text/css">
+            .blue-box{
+    width: 10%;
+    height: 50px;
+    background: #1B40E6;
+    }
+
+    .corner-text {
+        position: absolute;
+        height: 22px;
+        left: 79.83%;
+        right: 4.69%;
+        top: 18px;;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+
+        color: #53585E;
+        }
+        
+        .rect {
+            position: absolute;
+            width: 80%;
+            height: 80%;
+            margin: auto;
+            top: 20%;
+            bottom: 10%;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 10px #7591B0;
+            border-radius: 8px;
+        }
+        .text1{
+            position: absolute;
+            padding-top: 2%;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 112.5%;
+            line-height: 22px;
+            /* identical to box height */
+
+            text-align: center;
+            letter-spacing: 0.3px;
+
+            color: #53585E;
+
+        }
+        .text2 {
+            position: absolute;
+            top: 10%;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 150%;
+            letter-spacing: 0.4px;
+
+            color: #1B40E6;
+        }
+        .text3{
+            position: absolute;
+            top: 30%;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 125%;
+            letter-spacing: 0.333333px;
+
+            color: #53585E;
+        }
+        .table{
+            position: absolute;
+            bottom: 10%;
+            width: 90%;
+            text-align: center;
+            
+        }
+
+        @media (max-width: 600px) {
+            .table{
+                bottom: 20%;
+            }
+            .text3{
+                top: 5%;
+            }
+        }
+    
+
+        td{
+        text-align: center;
+        padding-top: 8%;
+        }
+        .radio-text{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 120%;
+            line-height: 20px;
+            letter-spacing: 0.266667px;
+            padding-left: 5%;
+            float: left;
+            color: #53585E;
+        }
+    </style>
+    </head>
+    <body style="background-color: #E5E5E5;">
+        <div style="padding-left:0.2%; padding-top: 0.2%;">
+            <div class="blue-box"></div>
+        </div>  
+        <div class="corner-text">entrepreneur View</div>
+        <div style="display: flex; justify-content: center;">
+            <div class="rect">
+                <div style="display: flex; justify-content: center;">
+                    <div class="text1">Startup 1</div>
+                    <div class="text2">ABC Startup</div>
+                    <div class="text3">Tell us which area would you like to look into?</div>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                <table class="table">
+                    
+                    <tr>
+                    <td><input type="radio" name="Manage Project"></td>
+                    <td><div class="radio-text">Manage Project </div></td>
+                    <td><input type="radio" value="Manage Email"></td>
+                    <td><div class="radio-text">Manage Email</div></td>
+                    <td><input type="radio" name="Talk to Team "></td>
+                    <td><div class="radio-text">Talk to Team </div></td>
+                    </tr>
+                    
+                    <tr class="td">
+                        <td><input type="radio" name="Manage Project"></td>
+                        <td><div class="radio-text">Hire a New Team Member</div></td>
+                        <td><input type="radio" name="Manage Email"></td>
+                        <td><div class="radio-text">HR and Administration</div></td>
+                        <td><input type="radio" name="Talk to Team "></td>
+                        <td><div class="radio-text">Setup</div></td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

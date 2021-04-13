@@ -22,7 +22,7 @@
  
    <link rel='stylesheet' type='text/css' media='screen'>
 
-  <style type="text/css">
+  <style>
     .img-box{
         position: absolute;
         width: 45%;
@@ -60,8 +60,7 @@
         font-family: Montserrat;
         font-style: normal;
         font-weight: 500;
-        font-size: 24px;
-        line-height: 51px;
+        font-size: 150%;
         letter-spacing: 0.2px;
 
         color: #53585E;
@@ -73,8 +72,7 @@
         font-family: Montserrat;
         font-style: normal;
         font-weight: 500;
-        font-size: 24px;
-        line-height: 51px;
+        font-size: 150%;
         letter-spacing: 0.2px;
 
         color: #53585E;
@@ -86,8 +84,7 @@
         font-family: Montserrat;
         font-style: normal;
         font-weight: 500;
-        font-size: 24px;
-        line-height: 29px;
+        font-size: 150%;
         text-align: center;
         letter-spacing: 0.4px;
 
@@ -95,25 +92,22 @@
         }
         .create-new-startup{
             position: absolute;
-            top: 72%;
-
+            top: 70%;
             font-family: Montserrat;
             font-style: normal;
             font-weight: 500;
-            font-size: 120%;
+            font-size: 24px;
             line-height: 51px;
             letter-spacing: 0.2px;
-            text-align: center;
             color: #53585E; 
             }
             .create-new-startup1{
             position: absolute;
-            top: 80%;
-
+            top: 82%;
             font-family: Montserrat;
             font-style: normal;
             font-weight: 500;
-            font-size: 120%;
+            font-size: 24px;
             line-height: 51px;
             letter-spacing: 0.2px;
 
@@ -145,7 +139,22 @@
 
         color: #53585E;
     }
-
+    @media screen and (max-width: 600px) {
+            .back{
+                top: 10%;
+            }
+            .or{
+                top: 10%;
+                font-size: 200%;
+            }
+            .corner-text{
+                font-size: 60%;
+                left: 60%;
+            }
+            .blue-box{
+            width: 20%;
+            }
+        }
   </style> 
 </head>
 
@@ -160,13 +169,13 @@
     </div>
         <div class="white-box" >
             <div style="display: flex; justify-content: center;">
-                <div class="text">I would like to look into my </div>
-                <div class="text1">Virtual Startup</div>
+                <div class="text">I would like to </div>
+                <div class="text1">contribute to my Startup</div>
                 <div class="or">or</div>
                 <div style="display: flex; justify-content: center;">
-                <a href="/signup"><div class="create-new-startup">Create New </div></a>
-                </div>      
-                <div class="create-new-startup1">Virtual Startup</div>
+                    <div class="create-new-startup">I would like to apply to a </div>    
+                    <div class="create-new-startup1">Virtual Startup</div> 
+                </div>
             </div>
         </div>
 

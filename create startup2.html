@@ -1,0 +1,95 @@
+<!-- create startup2.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  h1{
+        margin: 20px;
+        color: blue;
+    }
+    .selection ,.enter{
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+    }
+    select{
+        width: 70%;
+        margin-top: 20px;
+        height: 40px;
+    }
+    .next{
+        background-color: blue;
+        color: white;
+        float: right;
+        border-radius: 30px;
+        padding: 10px 30px;
+        margin: 20px;
+    }
+    input{
+        border: none;
+        border-bottom: 1px solid black;
+        width: 70%;
+        margin: 20px 0px;
+        padding: 5px;
+            }
+        
+  
+</style>
+<body>
+    <div>
+        <h1>Create New vitual Startup</h1>
+    </div>
+    <div class="selection">
+        <label for="">Industry</label>
+        
+        <select name="cars" id="cars">
+        <option value="">Select Industry</option>
+        <option value="">Health Care</option>
+        <option value="">Retail</option>
+        <option value="">Logistics</option>
+        <option value="">Agriculture</option>
+        <option value="">Aviation</option>
+        <option value="">Automobiles</option>
+            
+    </select>
+    </div>
+    <div class="selection">
+        <label for="">Project Nature</label>
+        
+        <select name="cars" id="cars">
+        <option value="">Select Project Nature</option>
+        
+        <option value="">Software Heavy</option>
+        <option value="">Civil Heavy</option>
+        <option value="">Pure Mechanical</option>
+        <option value="">IOT and Automation</option>
+        <option value="">Chemical Heavy</option>
+            
+    </select>
+    </div>
+    <div class="enter">
+        <label for="">Skills Required</label>
+        <input type="text">
+    </div>
+    <div class="enter">
+        <label for="">Tools and Technology</label>
+        <input type="text">
+    </div>
+    <div>
+        <button type="submit" class="next"><b> Submit </b></button>
+
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>

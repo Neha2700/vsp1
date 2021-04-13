@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login page</title>
+        <link rel='stylesheet' type='text/css' media='screen'>
+        
+    <style>
+        .blue-box{
+            width: 10%;
+            height: 50px;
+            background: #1B40E6;
+        }
+
+        .corner-text {
+            position: absolute;
+            left: 79.83%;
+            top: 18px;;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 120%;
+            /* identical to box height */
+
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+
+            color: #53585E;
+        }
+        .back{
+            position: absolute;
+            left: 1%;
+            top: 12%;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            letter-spacing: 0.233333px;
+
+            color: #53585E;
+
+        }
+       
+
+        .rect{
+            position: absolute;
+            width: 40%;
+            height: 80%;
+            top: 15%;
+            bottom: 5%;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 10px #7591B0;
+            border-radius: 8px;
+        }
+        .text{
+            position: absolute;
+            top: 5%;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 150%;
+            /* identical to box height */
+
+            text-align: center;
+            letter-spacing: 0.125px;
+
+            color: #53585E;
+
+        }
+        .email{
+            position: absolute;
+            padding-left: 10%;
+            top: 17%;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 12px;
+            color: #53585E;
+
+        }
+        .email-text{
+            position: absolute;
+            width: 80%;
+            height: 8%;
+            top: 20%;
+            
+            background: #FFFFFF;
+            border: 1px solid #928E9D;
+            box-sizing: border-box;
+            border-radius: 2px;
+        }
+        .password{
+            position: absolute;
+            padding-left: 10%;
+            top: 35%;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 12px;
+            color: #53585E;
+        }
+        .pass-text{
+            position: absolute;
+            width: 80%;
+            height: 8%;
+            top: 38%;
+
+            background: #FFFFFF;
+            border: 1px solid #928E9D;
+            box-sizing: border-box;
+            border-radius: 2px;
+        }
+        .submit{
+            position: absolute;
+            width: 30%;
+            top: 50%;
+            height: 8%;
+            background: #1B40E6;
+            border-radius: 32px;
+            color: white;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 80%;
+            text-align: center;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+
+        }
+        .forget{
+            position: absolute;
+            height: 22px; 
+            top: 60%;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 112.5%;
+            line-height: 22px;
+            /* identical to box height */
+
+            text-align: center;
+            letter-spacing: 0.6px;
+
+            color: #53585E;
+        }
+        .new-user{
+            position: absolute;
+            top: 85%;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 120%;
+            letter-spacing: 0.8px;
+
+            color: #53585E;
+
+        }
+        .arrow{
+            position: absolute;
+            width: 46px;
+            height: 1px;
+            left: 945px;
+            top: 867.5px;
+
+            border: 2px solid #53585E;
+        }
+        @media screen and (max-width: 600px) {
+            .back{
+                top: 10%;
+            }
+            .rect{
+                width: 80%;
+            }
+            .corner-text{
+                font-size: 60%;
+                left: 60%;
+            }
+            .blue-box{
+            width: 20%;
+            }
+        }
+    </style>
+    </head>
+    <body style="background-color: #E5E5E5; ">
+        <div style="padding-left:0.2%; padding-top: 0.2%;">
+            <div class="blue-box"></div>
+        </div>  
+        <div class="corner-text">entrepreneur View </div>
+        <div class="back"><b>&#x2190 Back</b></div>
+        <div style="display: flex; justify-content: center;">
+            
+            <div class="rect">
+                <div style="display: flex; justify-content: center;">
+                <div class="text">I am an Existing User</div>
+                </div>
+                <form action=" " method="POST">
+                <div class="email">Email </div>
+                <div style="padding-left: 10%;"><input type="email" name="email" class="email-text" ></div>
+                <div class="password">Password</div>
+                <div style="padding-left: 10%;"><input type="password" name="psw" class="pass-text" ></div>
+                <div style="display: flex; justify-content: center;">
+                    <input type="submit" name="Submit" value="SIGN UP" class="submit">
+                    <div class="forget">Forgot Password?</div>
+                    <div class="new-user"><a href="\signup">I am a new user Create Account </a></div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>

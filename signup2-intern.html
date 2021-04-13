@@ -74,7 +74,7 @@
     .container {
       position: absolute;
       width: 60%;
-      height: 120%;
+      height: 155%;
       left: 35%;
       right: 5%;
       background: #FFFFFF;
@@ -84,7 +84,7 @@
     .left-panel {
       position: absolute;
       width: 35%;
-      height: 120%;
+      height: 155%;
       left: 5%;
 
       background: rgba(117, 145, 176, 0.491559);
@@ -125,10 +125,10 @@
              margin: 7% 0;
            }
            .container {
-            height: 70%;
+            height: 95%;
            }
            .left-panel {
-            height: 70%;
+            height: 95%;
            }
         }
     
@@ -138,6 +138,18 @@
       width: 20%;
       border-radius: 30px;
       background-color: blue;
+      
+    }
+    .previous-step {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 70%;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      float: left;
+      color: #928E9D;
+
     }
 
   
@@ -168,6 +180,21 @@
       letter-spacing: 0.4px;
       color: #1B40E6;
     }
+    .selection ,.enter{
+        display: flex;
+        flex-direction: column;
+        margin: 3px;
+    }
+    .select {
+        width: 85%;
+      padding: 2% 0%;
+      
+      margin: 1.5% 0;
+      display: inline-block;
+      border: 2px solid #ccc;
+      box-sizing: border-box;
+    }
+   
    
   </style>
 
@@ -182,59 +209,70 @@
         <div class="container">
           
           <h1> Create Account</h1>
-
+            
           <form action="{{url_for('insert')}}" method="post" style="border: 1px solid #ccc">
             <div style="padding-left: 10%;">
               <div class="gap-label" ></div>
-              <label class="label-name" >Name</label>
               <div class="gap" ></div>
-              <input
-                
-                type="text"
-                placeholder="Enter Name"
-                name="name"
-                required
-              />
 
-              <label class="label-name">Email</label>
-              <input
-                type="email"
-                placeholder="Enter Email"
-                name="email"
-                required
-              />
+              <div class="selection">
+                <label for="">Education Course</label>
+                <select class="select">
+                    <option value="">college names</option>
+                </select>
+             </div>
 
-              <label class="label-name">Phone Number</label>
-              <input
-                type="number"
-                placeholder="Enter Phone Number"
-                name="phone"
-                required
-              />
+             <div class="selection">
+                <label for="">Stream</label>
+                <select class="select">
+                    <option value="">select stream</option>
+                    <option value="">Computer Technology</option>
+                    <option value="">Information Technology</option>
+                </select>
+             </div>
 
-              <label class="label-name" >Password</label>
-              <input
-                type="password"
-                placeholder="Enter Password"
-                name="psw"
-                required
-              />
-             
-              <label class="label-name" >Repeat Password</label>
-              <input
-                type="password"
-                placeholder="Repeat Password"
-                name="psw-repeat"
-                required
-              />
-              <br><br>
-              <input type="checkbox" checked="checked" /> Remember me
-              <p>
-                To create an account you have to agree our
-                <a href="#">Terms & Privacy</a>.
-              </p>
+             <div class="selection">
+                <label for="">Semester</label>
+                <select class="select">
+                    <option value="">Select Semester </option>
+                    <option value="">Semester 1</option>
+                    <option value="">Semester 2</option>
+                    <option value="">Semester 3</option>
+                    <option value="">Semester 4</option>
+                </select>
+             </div>
 
-              <div class="clearfix">
+             <div class="selection">
+              <label for="">College</label>
+              <input style="margin: 1.5% 0;" type="text">
+           </div>
+           <div class="selection">
+            <label for="">Skills</label>
+            <input style="margin: 1.5% 0;" type="text">
+            <span style="letter-spacing: 0.6px; color: #53585E; font-size: 80%;">Seaprate with ( , ) (eg. UI Designer, JAVA)</span>
+         </div>
+
+         <div class="selection">
+          <label for="">State</label>
+          <select class="select">
+              <option value="">Maharastra</option>
+          </select>
+       </div>
+
+       <div class="selection">
+          <label for="">City</label>
+          <select class="select">
+              <option value="">select stream</option>
+              <option value="">Pune</option>
+              <option value="">Nashik</option>
+          </select>
+       </div>
+       <div class="selection">
+        <label for="">Resume</label>
+        <input style="margin: 1.5% 0; padding: 2% ;" placeholder="Upload resume" type="file">
+     </div>
+              
+              <div class="previous-step">Previous step</div>
                 <button type="submit" class="signupbtn">
                   <b>Get started</b> 
                 </button>
