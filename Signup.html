@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     
+    input[type=text],
+    input[type=email],
+    input[type=password],
+    input[type = number]
+     {
+        width: 100%;
+        padding: 15px 20px;
+        margin: 15px 0;
+        display: inline-block;
+        border: 2px solid #ccc;
+        box-sizing: border-box;
+    }
+
+
+     
+    button {
+        background-color: Green;
+        color: white;
+        padding: 15px 20px;
+        margin: 8px 0;
+        cursor: pointer;
+        width: 100%;
+        
+    }
+    .top{
+        height: 100vh;
+    }
+    /* split the screen */
+    .split {
+        height: 100%;
+        width: 70%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+            }
+
+
+    /* Control the left side */
+        .left {
+        left: 0;
+        width: 26%;
+         background-color: rgb(204, 204, 241) ; 
+        }
+
+
+        /* Control the right side */
+        .right {
+        right: 0;
+                }
+       
+     
+
+
+    .signupbtn {
+        float: right;
+        width: 20%;
+        border-radius: 30px;
+        background-color: blue;
+        
+    }
+     
+    .container {
+        padding: 16px;
+    }
+    /*clear floats*/
+     
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    /*styles for cancel button and signup button
+      on extra small screens*/
+     
+    @media screen and (max-width: 400px) {
+        .signupbtn {
+            width: 100%;
+        }
+    }
+
+
+    h1{
+        color: blue;
+
+
+    }
+</style>
+
+
+<body>
+    
+    <div class="top">
+            <div class="split right">
+
+
+
+
+                <h1><b> Create Account</b></h1>
+
+
+                 <form action="{{url_for('startuplist')}}" method="POST" style="border:1px solid #ccc">
+            <div class="container">
+                <label>Name</label>
+                <input type="text" placeholder="Enter Name" name="name" required>
+     
+                <label>Email</label>
+                <input type="email" placeholder="Enter Email" name="email" required>
+                
+                <label>Phone Number</label>
+                <input type="number" placeholder="Enter Phone Number" name="phone" required>
+     
+                <label>Password</label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+     
+                <label>Repeat Password</label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                <input type="checkbox" checked="checked"> Remember me
+                <p>To create an account you have to agree our <a href="#">Terms & Privacy</a>.</p>
+     
+                <div class="clearfix">
+                    <button type="submit" class="signupbtn"><b> Get started </b></button>
+                </div>
+            </div>
+        </form>
+      </div>
+    </div>    
+    </div>
+
+
+    <div class="split left">
+
+
+    </div>
+
+
+    
+    
+    
+    
+  
+</body>
+</html>
